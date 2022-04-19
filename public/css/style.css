@@ -21261,6 +21261,11 @@ header {
   background-color: #32a2b8;
 }
 
+#grande-img img {
+  height: 400px !important;
+  width: 100%;
+}
+
 #grid-img .container {
   background-color: #f8f9fa;
 }

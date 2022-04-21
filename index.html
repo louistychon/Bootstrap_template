@@ -27,7 +27,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav text-white align-items-end">
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         <a class="nav-link text-white-50" href="#">Features</a>
@@ -38,11 +38,15 @@
         </nav>
     </header>
     <main>
-        <section id="grande-img" class="w-75 m-auto mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
-            <img src="/public/img/twitter_bootstrap-wallpaper-1920x1200.jpg" alt="" srcset="">
+        <section id="grande-img" class="w-75 d-block m-auto mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
+                    <div class="row">
+                        <div>
+                            <img class="" src="/public/img/twitter_bootstrap-wallpaper-1920x1200.jpg">
+                        </div>
+                    </div>
         </section>
-        <section id="grid-img">
-            <div class="container mt-1 mb-5 w-75 ">
+        <section id="grid-img" class="w-75 m-auto">
+            <div class="mt-1 mb-5">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
                         <div class="card border-0">
@@ -112,7 +116,8 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 mt-4 mt-sm-4 mt-md-4 mt-lg-0 container">
                     <div class="row">
-                        <div class="d-flex d-sm-flex-col d-md-flex-row d-lg-flex-row d-xl-flex-row flex-wrap align-items-center justify-content-center">
+                        <div
+                            class="d-flex d-sm-flex-col d-md-flex-row d-lg-flex-row d-xl-flex-row flex-wrap align-items-center justify-content-center">
                             <p class="m-0 p-0">Newsletter </p>
                             <input name="newsletter" class="rounded border-0" type="email">
                             <button class="d-flex btn bg-black text-white">Subscribe</button>
